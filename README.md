@@ -1,5 +1,7 @@
 # Agentic Movie Recommender
 
+Collaborators: Celina Cao, Venssa Liu, Vansh Kharyal
+
 A movie recommendation agent built around `gemma4:31b-cloud`. Given a user's preferences and watch history, `get_recommendation()` returns a single persuasive pitch for a movie drawn from the TMDB Top 1000 corpus.
 
 Under the hood, the agent combines a local TF-IDF retrieval pass, a content-filtering tool that scores candidates against the prompt, and optional TMDB API enrichment before a final generation step. When TMDB is unavailable — no key, timeout, rate limit — the system degrades cleanly to the local CSV path and still returns a valid in-dataset movie.

@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Secrets — never commit these
+.env
+.env.local
+*.pem
+*.key
+client_secret*.json
+credentials.json
+
+# Editors
+.vscode/
+.idea/
+*.swp

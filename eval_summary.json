@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-04-22 16:31:01",
+  "generator_model": "gemma4:31b-cloud",
+  "judge_model": "claude-haiku-4-5-20251001",
+  "external_judge": true,
+  "case_count": 8,
+  "validity_passed": 8,
+  "validity_rate": 1.0,
+  "invalid_id_rate": 0.0,
+  "repeat_rate": 0.0,
+  "timeout_rate": 0.0,
+  "mean_relevance": 4.25,
+  "mean_novelty": 4.875,
+  "mean_pitch": 3.375,
+  "mean_accuracy": 4,
+  "ab_ours_wins": 6,
+  "ab_baseline_wins": 2,
+  "ab_ties": 0,
+  "ab_win_rate": 0.75
+}

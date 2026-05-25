@@ -1,0 +1,440 @@
+{
+  "summary": {
+    "timestamp": "2026-04-22 16:31:01",
+    "generator_model": "gemma4:31b-cloud",
+    "judge_model": "claude-haiku-4-5-20251001",
+    "external_judge": true,
+    "case_count": 8,
+    "validity_passed": 8,
+    "validity_rate": 1.0,
+    "invalid_id_rate": 0.0,
+    "repeat_rate": 0.0,
+    "timeout_rate": 0.0,
+    "mean_relevance": 4.25,
+    "mean_novelty": 4.875,
+    "mean_pitch": 3.375,
+    "mean_accuracy": 4,
+    "ab_ours_wins": 6,
+    "ab_baseline_wins": 2,
+    "ab_ties": 0,
+    "ab_win_rate": 0.75
+  },
+  "results": [
+    {
+      "case": "single_genre_action",
+      "tier": "easy",
+      "preferences": "Action superhero blockbuster",
+      "elapsed_seconds": 2.528,
+      "baseline_elapsed_seconds": 2.647,
+      "valid": true,
+      "issues": [],
+      "hard_checks": {
+        "dict": true,
+        "has_required_keys": true,
+        "valid_id": true,
+        "not_seen": true,
+        "description_length": true,
+        "under_timeout": true,
+        "references_history_when_present": true
+      },
+      "recommendation": {
+        "tmdb_id": 299536,
+        "description": "The Avengers need to stop Thanos from collecting all the Infinity Stones, but he's way more powerful than any single hero they've ever faced. It's a massive blockbuster that leaves you staring at the screen in total shock."
+      },
+      "baseline": {
+        "tmdb_id": 299536,
+        "description": "Experience the ultimate superhero spectacle in Avengers: Infinity War. As the universe's greatest heroes unite to stop the ruthless Thanos from collecting all the Infinity Stones, the stakes reach an epic scale in this high-octane blockbuster."
+      },
+      "movie": {
+        "tmdb_id": 299536,
+        "title": "Avengers: Infinity War",
+        "year": 2018,
+        "genres": "Adventure, Action, Science Fiction",
+        "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+        "keywords": "sacrifice, magic, superhero, based on comic, space, battlefield, genocide, magical object, super power, superhero team",
+        "original_language": "en",
+        "top_cast": "Robert Downey Jr., Chris Evans, Chris Hemsworth, Josh Brolin, Mark Ruffalo"
+      },
+      "judge": {
+        "relevance": 5,
+        "novelty": 5,
+        "pitch": 4,
+        "accuracy": 5,
+        "reason": "Perfect match for action superhero blockbuster preference with no watch history to conflict. Description accurately captures the high-stakes cosmic threat and ensemble scale, though the pitch relies on emotional impact rather than specific character or plot details that might strengthen"
+      },
+      "ab": {
+        "winner": "A",
+        "winner_source": "baseline",
+        "assignment": {
+          "A": "baseline",
+          "B": "ours"
+        },
+        "reason": "More polished and professional description that emphasizes the epic scale and spectacle matching the user's action superhero blockbuster preference, while B relies on casual language and vague emotional appeals."
+      }
+    },
+    {
+      "case": "single_genre_family",
+      "tier": "easy",
+      "preferences": "Animated family movie for a rainy afternoon",
+      "elapsed_seconds": 2.658,
+      "baseline_elapsed_seconds": 4.911,
+      "valid": true,
+      "issues": [],
+      "hard_checks": {
+        "dict": true,
+        "has_required_keys": true,
+        "valid_id": true,
+        "not_seen": true,
+        "description_length": true,
+        "under_timeout": true,
+        "references_history_when_present": true
+      },
+      "recommendation": {
+        "tmdb_id": 354912,
+        "description": "Miguel just wants to play his music, but his family has banned it for generations. It's a gorgeous ride through the Land of the Dead that leaves you feeling a deep, warm ache for your own ancestors."
+      },
+      "baseline": {
+        "tmdb_id": 157336,
+        "description": "Interstellar is a popular baseline pick with broad appeal. It combines adventure, drama, science fiction elements and gives the user a reliable, high-profile option."
+      },
+      "movie": {
+        "tmdb_id": 354912,
+        "title": "Coco",
+        "year": 2017,
+        "genres": "Family, Animation, Music, Adventure",
+        "overview": "Despite his family\u2019s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
+        "keywords": "skeleton, mexico, guitar, afterlife, musician, holiday, villain, singer, murderer, life after death",
+        "original_language": "en",
+        "top_cast": "Anthony Gonzalez, Gael Garc\u00eda Bernal, Benjamin Bratt, Alanna Ubach, Ren\u00e9e Victor"
+      },
+      "judge": {
+        "relevance": 5,
+        "novelty": 5,
+        "pitch": 4,
+        "accuracy": 5,
+        "reason": "Perfect match for rainy afternoon family viewing: animated, colorful, emotionally resonant without being heavy. Description captures the core conflict and emotional payoff authentically. Only minor pitch weakness: 'deep, warm ache' might feel slightly melancholic for someone seeking pure comfort"
+      },
+      "ab": {
+        "winner": "B",
+        "winner_source": "ours",
+        "assignment": {
+          "A": "baseline",
+          "B": "ours"
+        },
+        "reason": "B is an animated family film (Coco) that matches the request perfectly, while A (Interstellar) is a 3-hour sci-fi drama unsuitable for a rainy afternoon family viewing."
+      }
+    },
+    {
+      "case": "single_genre_romcom",
+      "tier": "medium",
+      "preferences": "Classic romantic comedy",
+      "elapsed_seconds": 12.468,
+      "baseline_elapsed_seconds": 20.051,
+      "valid": true,
+      "issues": [],
+      "hard_checks": {
+        "dict": true,
+        "has_required_keys": true,
+        "valid_id": true,
+        "not_seen": true,
+        "description_length": true,
+        "under_timeout": true,
+        "references_history_when_present": true
+      },
+      "recommendation": {
+        "tmdb_id": 1291335,
+        "description": "All roads lead to (being left in) Rome. \u2014 After Matt's dreams of a picturesque Italian wedding are shattered when his fianc\u00e9e leaves him at the altar, he embarks on his planned honeymoon across Italy alone, immersing himself in the country's vibrant culture, food, and beauty, meeting Gia along the way. For something warm, funny, and easy to enjoy, this delivers easy charm with a genuine emotional payoff."
+      },
+      "baseline": {
+        "tmdb_id": 157336,
+        "description": "Interstellar is a popular baseline pick with broad appeal. It combines adventure, drama, science fiction elements and gives the user a reliable, high-profile option."
+      },
+      "movie": {
+        "tmdb_id": 1291335,
+        "title": "Solo Mio",
+        "year": 2026,
+        "genres": "Romance, Comedy",
+        "overview": "After Matt's dreams of a picturesque Italian wedding are shattered when his fianc\u00e9e leaves him at the altar, he embarks on his planned honeymoon across Italy alone, immersing himself in the country's vibrant culture, food, and beauty, meeting Gia along the way.",
+        "keywords": "rome, italy, italy, sadness, honeymoon, romcom, loneliness, abandonment, relaxed, left at the altar, romantic",
+        "original_language": "en",
+        "top_cast": "Kevin James, Alyson Hannigan, Kim Coates, Jonathan Roumie, Julie Ann Emery"
+      },
+      "judge": {
+        "relevance": 4,
+        "novelty": 4,
+        "pitch": 3,
+        "accuracy": 4,
+        "reason": "Strong match for classic romcom preference with Italy setting, meet-cute, and emotional arc; no watch history to conflict with; pitch uses clever wordplay but lacks specificity about what makes it distinctly appealing versus generic romcom fare; metadata supports the description well."
+      },
+      "ab": {
+        "winner": "A",
+        "winner_source": "ours",
+        "assignment": {
+          "A": "ours",
+          "B": "baseline"
+        },
+        "reason": "Recommendation A directly matches the user's stated preference for classic romantic comedy with a relevant plot, while B is a sci-fi drama that completely misaligns with the request."
+      }
+    },
+    {
+      "case": "combo_scifi_dark",
+      "tier": "medium",
+      "preferences": "Sci-fi with a dark, brooding tone \u2014 think Blade Runner",
+      "elapsed_seconds": 3.033,
+      "baseline_elapsed_seconds": 2.236,
+      "valid": true,
+      "issues": [],
+      "hard_checks": {
+        "dict": true,
+        "has_required_keys": true,
+        "valid_id": true,
+        "not_seen": true,
+        "description_length": true,
+        "under_timeout": true,
+        "references_history_when_present": true
+      },
+      "recommendation": {
+        "tmdb_id": 263115,
+        "description": "Logan just wants to fade away in peace, but a mysterious girl and a ruthless corporate army force him back into a fight he's too tired for. It's got that dark, brooding energy you're looking for and leaves you feeling completely gutted. For a darker, heavier mood, this delivers emotional pull and the kind of performances that linger"
+      },
+      "baseline": {
+        "tmdb_id": 157336,
+        "description": "Interstellar is a popular baseline pick with broad appeal. It combines adventure, drama, science fiction elements and gives the user a reliable, high-profile option."
+      },
+      "movie": {
+        "tmdb_id": 263115,
+        "title": "Logan",
+        "year": 2017,
+        "genres": "Action, Drama, Science Fiction",
+        "overview": "In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. But Logan's attempts to hide from the world and his legacy are upended when a young mutant arrives, pursued by dark forces.",
+        "keywords": "future, experiment, immortality, self-destruction, cyborg, dystopia, superhero, mutant, road trip, based on comic",
+        "original_language": "en",
+        "top_cast": "Hugh Jackman, Dafne Keen, Patrick Stewart, Elizabeth Rodriguez, Boyd Holbrook"
+      },
+      "judge": {
+        "relevance": 3,
+        "novelty": 5,
+        "pitch": 4,
+        "accuracy": 4,
+        "reason": "Logan matches the dark, brooding tone well and delivers emotional weight, but it's primarily a character-driven superhero drama rather than sci-fi worldbuilding like Blade Runner. The pitch is compelling and specific, though the sci-fi elements are secondary to the western-tinged character study."
+      },
+      "ab": {
+        "winner": "B",
+        "winner_source": "ours",
+        "assignment": {
+          "A": "baseline",
+          "B": "ours"
+        },
+        "reason": "B directly matches the user's specific request for dark, brooding tone like Blade Runner with concrete details about emotional weight and atmosphere, while A is a generic 'baseline pick' that contradicts the stated preference for dark sci-fi."
+      }
+    },
+    {
+      "case": "combo_funny_horror",
+      "tier": "medium",
+      "preferences": "Funny horror, heavy on laughs, light on gore",
+      "elapsed_seconds": 2.595,
+      "baseline_elapsed_seconds": 2.575,
+      "valid": true,
+      "issues": [],
+      "hard_checks": {
+        "dict": true,
+        "has_required_keys": true,
+        "valid_id": true,
+        "not_seen": true,
+        "description_length": true,
+        "under_timeout": true,
+        "references_history_when_present": true
+      },
+      "recommendation": {
+        "tmdb_id": 567609,
+        "description": "A bride just wants to survive her wedding night, but her rich in-laws force her into a lethal game of hide-and-seek. It's heavy on the laughs and keeps the gore manageable, leaving you feeling totally pumped by the chaotic energy. For something genuinely funny with real horror DNA \u2014 laughs first, scares optional, this delivers creeping atmosphere and genuine unease"
+      },
+      "baseline": {
+        "tmdb_id": 293660,
+        "description": "Looking for laughs? Deadpool delivers a hilarious, fourth-wall-breaking ride. While it's an action-comedy rather than traditional horror, it's the only choice here that matches your request for a movie heavy on laughs."
+      },
+      "movie": {
+        "tmdb_id": 567609,
+        "title": "Ready or Not",
+        "year": 2019,
+        "genres": "Horror, Comedy",
+        "overview": "A young bride's wedding night turns into her worst nightmare when her ridiculously rich in-laws force her to play a gruesome game of hide-and-seek.",
+        "keywords": "escape, ritual, marriage, satanism, gore, pact with the devil, wealth, murder, wedding, game",
+        "original_language": "en",
+        "top_cast": "Samara Weaving, Mark O'Brien, Adam Brody, Henry Czerny, Andie MacDowell"
+      },
+      "judge": {
+        "relevance": 4,
+        "novelty": 5,
+        "pitch": 4,
+        "accuracy": 3,
+        "reason": "Strong match for funny horror preference with verified comedic tone and manageable gore, but description oversells 'creeping atmosphere' and 'unease'\u2014the film is primarily a dark comedy romp, not atmospheric horror. Pitch is engaging and concrete. No watch history to conflict with."
+      },
+      "ab": {
+        "winner": "B",
+        "winner_source": "ours",
+        "assignment": {
+          "A": "baseline",
+          "B": "ours"
+        },
+        "reason": "B directly matches the funny horror genre request with horror DNA, while A is primarily action-comedy that explicitly isn't traditional horror, making it a poor fit for the stated preference."
+      }
+    },
+    {
+      "case": "mood_uplifting",
+      "tier": "medium",
+      "preferences": "Something uplifting, I've had a rough week",
+      "elapsed_seconds": 2.921,
+      "baseline_elapsed_seconds": 2.222,
+      "valid": true,
+      "issues": [],
+      "hard_checks": {
+        "dict": true,
+        "has_required_keys": true,
+        "valid_id": true,
+        "not_seen": true,
+        "description_length": true,
+        "under_timeout": true,
+        "references_history_when_present": true
+      },
+      "recommendation": {
+        "tmdb_id": 122906,
+        "description": "Tim wants to find a way to make his life and his relationship perfect, but he discovers that even with the ability to travel in time, he can't avoid the inevitable pains of growing up. It's a total warm hug that leaves you feeling deeply grateful for the ordinary moments."
+      },
+      "baseline": {
+        "tmdb_id": 118340,
+        "description": "Looking for a pick-me-up? Dive into the colorful and hilarious world of Guardians of the Galaxy. With its fantastic soundtrack, witty humor, and a heartwarming story about found family, it's the perfect uplifting escape to turn your week around."
+      },
+      "movie": {
+        "tmdb_id": 122906,
+        "title": "About Time",
+        "year": 2013,
+        "genres": "Drama, Romance, Fantasy",
+        "overview": "The night after another unsatisfactory New Year's party, Tim's father tells his son that the men in his family have always had the ability to travel through time. They can't change history, but they can change what happens and has happened in their own lives. Thus begins the start of a lesson in learning to appreciate life itself as it is, as it comes, and most importantly, the people living alongside us.",
+        "keywords": "london, england, soulmates, parent child relationship, time travel, family secrets, cornwall, england, family, second chance, thoughtful, time-manipulation",
+        "original_language": "en",
+        "top_cast": "Domhnall Gleeson, Rachel McAdams, Bill Nighy, Tom Hollander, Margot Robbie"
+      },
+      "judge": {
+        "relevance": 5,
+        "novelty": 5,
+        "pitch": 4,
+        "accuracy": 5,
+        "reason": "Perfect match for uplifting mood request\u2014film explicitly teaches appreciation of life and relationships. No watch history to conflict with. Description accurately captures the core theme of finding meaning in ordinary moments rather than perfection, with emotionally resonant language ('warm hug,'"
+      },
+      "ab": {
+        "winner": "A",
+        "winner_source": "baseline",
+        "assignment": {
+          "A": "baseline",
+          "B": "ours"
+        },
+        "reason": "Recommendation A directly addresses the user's stated need for something uplifting with explicit acknowledgment of their rough week, while B's description focuses on accepting pain and growing up\u2014potentially less ideal for immediate emotional recovery."
+      }
+    },
+    {
+      "case": "hard_french_grief",
+      "tier": "hard",
+      "preferences": "Quiet French drama about grief",
+      "elapsed_seconds": 4.848,
+      "baseline_elapsed_seconds": 4.378,
+      "valid": true,
+      "issues": [],
+      "hard_checks": {
+        "dict": true,
+        "has_required_keys": true,
+        "valid_id": true,
+        "not_seen": true,
+        "description_length": true,
+        "under_timeout": true,
+        "references_history_when_present": true
+      },
+      "recommendation": {
+        "tmdb_id": 812037,
+        "description": "A teenager wants to connect with his estranged father, but the secrets of a past tragedy stand in the way. It's a quiet, heavy look at grief and family fractures that leaves you feeling a lingering, hollow ache."
+      },
+      "baseline": {
+        "tmdb_id": 157336,
+        "description": "Interstellar is a popular baseline pick with broad appeal. It combines adventure, drama, science fiction elements and gives the user a reliable, high-profile option."
+      },
+      "movie": {
+        "tmdb_id": 812037,
+        "title": "Last Summer",
+        "year": 2023,
+        "genres": "Drama",
+        "overview": "One summer, a French teenager who has been living with his mother in the city moves in with his estranged father\u2019s family in the countryside, where he clashes with his stepmother.",
+        "keywords": "coming of age, remake, older woman younger man relationship, candid, unfaithful wife, intimate, stepmother stepson relationship, provocative, intense",
+        "original_language": "fr",
+        "top_cast": "L\u00e9a Drucker, Samuel Kircher, Olivier Rabourdin, Clotilde Courau, Serena Hu"
+      },
+      "judge": {
+        "relevance": 3,
+        "novelty": 5,
+        "pitch": 2,
+        "accuracy": 2,
+        "reason": "French drama with family dysfunction matches preference, but the pitch invents 'past tragedy' and 'grief' not supported by metadata which emphasizes coming-of-age conflict and stepmother tension. Generic emotional language ('hollow ache') without specificity. Metadata suggests provocative intensity"
+      },
+      "ab": {
+        "winner": "B",
+        "winner_source": "ours",
+        "assignment": {
+          "A": "baseline",
+          "B": "ours"
+        },
+        "reason": "B directly matches the user's request for a quiet French drama about grief, while A is a blockbuster sci-fi film that contradicts all stated preferences."
+      }
+    },
+    {
+      "case": "era_recent_foreign",
+      "tier": "hard",
+      "preferences": "Recent foreign film with subtitles",
+      "elapsed_seconds": 0.247,
+      "baseline_elapsed_seconds": 5.765,
+      "valid": true,
+      "issues": [],
+      "hard_checks": {
+        "dict": true,
+        "has_required_keys": true,
+        "valid_id": true,
+        "not_seen": true,
+        "description_length": true,
+        "under_timeout": true,
+        "references_history_when_present": true
+      },
+      "recommendation": {
+        "tmdb_id": 1010581,
+        "description": "Love can only survive in the shadow of secrets. \u2014 Noah must leave her city, boyfriend, and friends to move into William Leister's mansion, the flashy and wealthy husband of her mother Rafaela. As a proud and independent 17 year old, Noah resists living in a mansion surrounded by luxury. However, it is there where she meets.... This Spanish-language choice keeps the subtitle request grounded."
+      },
+      "baseline": {
+        "tmdb_id": 157336,
+        "description": "Interstellar is a popular baseline pick with broad appeal. It combines adventure, drama, science fiction elements and gives the user a reliable, high-profile option."
+      },
+      "movie": {
+        "tmdb_id": 1010581,
+        "title": "My Fault",
+        "year": 2023,
+        "genres": "Drama, Romance, Thriller",
+        "overview": "Noah must leave her city, boyfriend, and friends to move into William Leister's mansion, the flashy and wealthy husband of her mother Rafaela. As a proud and independent 17 year old, Noah resists living in a mansion surrounded by luxury. However, it is there where she meets Nick, her new stepbrother, and the clash of their strong personalities becomes evident from the very beginning.",
+        "keywords": "first time, forbidden love, stepbrother, female protagonist, underage sex, stepsister, disturbed, based on young adult novel, enemies to lovers, passion and romance",
+        "original_language": "es",
+        "top_cast": "Nicole Wallace, Gabriel Guevara, Marta Hazas, Iv\u00e1n S\u00e1nchez, Eva Ruiz"
+      },
+      "judge": {
+        "relevance": 5,
+        "novelty": 5,
+        "pitch": 2,
+        "accuracy": 4,
+        "reason": "Perfect match for recent Spanish-language foreign film with subtitles, but the pitch is generic melodrama boilerplate that undersells the actual content and avoids mentioning the controversial stepsibling romance angle that defines the film."
+      },
+      "ab": {
+        "winner": "B",
+        "winner_source": "ours",
+        "assignment": {
+          "A": "baseline",
+          "B": "ours"
+        },
+        "reason": "B directly matches the user's request for recent foreign film with subtitles (Spanish-language), while A is English-language sci-fi that ignores the stated preference entirely."
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "label": "single_genre_action",
+    "tier": "easy",
+    "preferences": "Action superhero blockbuster",
+    "history": [],
+    "history_ids": []
+  },
+  {
+    "label": "single_genre_family",
+    "tier": "easy",
+    "preferences": "Animated family movie for a rainy afternoon",
+    "history": [],
+    "history_ids": []
+  },
+  {
+    "label": "single_genre_romcom",
+    "tier": "medium",
+    "preferences": "Classic romantic comedy",
+    "history": [],
+    "history_ids": []
+  },
+  {
+    "label": "combo_scifi_dark",
+    "tier": "medium",
+    "preferences": "Sci-fi with a dark, brooding tone — think Blade Runner",
+    "history": [],
+    "history_ids": []
+  },
+  {
+    "label": "combo_funny_horror",
+    "tier": "medium",
+    "preferences": "Funny horror, heavy on laughs, light on gore",
+    "history": [],
+    "history_ids": []
+  },
+  {
+    "label": "mood_uplifting",
+    "tier": "medium",
+    "preferences": "Something uplifting, I've had a rough week",
+    "history": [],
+    "history_ids": []
+  },
+  {
+    "label": "hard_french_grief",
+    "tier": "hard",
+    "preferences": "Quiet French drama about grief",
+    "history": [],
+    "history_ids": []
+  },
+  {
+    "label": "era_recent_foreign",
+    "tier": "hard",
+    "preferences": "Recent foreign film with subtitles",
+    "history": [],
+    "history_ids": []
+  }
+]

@@ -2,7 +2,7 @@
 
 > 📘 **Companion playbook**: [PLAYBOOK.md](PLAYBOOK.md) — the agent-building principles I extracted from working on this project.
 
-**Collaborators**: Celina Cao, Venssa Liu, Vansh Kharyal
+**Collaborators**: Celina Cao, Vanessa Liu, Vansh Kharyal
 
 A movie recommendation agent built around `gemma4:31b-cloud`. Given a user's preferences and watch history, `get_recommendation()` returns a single persuasive pitch for a movie drawn from the TMDB Top 1000 corpus.
 
